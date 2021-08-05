@@ -24,7 +24,7 @@
     <div class="splitter-card">
       <div class="card-bill">
         <h1 class="title-bill">Bill</h1>
-        <input type="number" placeholder="0" class="bill-input" />
+        <input type="number" placeholder="0" class="input-bill" />
       </div>
       <div class="card-tip">
         <h1 class="title-tip">Select Tip %</h1>
@@ -34,23 +34,28 @@
         <button class="number-tip">25%</button>
         <button class="number-tip">50%</button>
         <button class="custom-tip">
-          <input type="text" placeholder="Custom" class="custom-input" />
+          <input type="text" placeholder="Custom" class="input-custom" />
         </button>
       </div>
 
       <div class="card-people">
-        Number of People
-        <input type="number" />
+        <h1 class="title-people">Number of People</h1>
+        <input type="number" placeholder="0" class="input-people" />
       </div>
 
       <div class="card-result">
-        <span class="tip-amount"
-          >Tip Amount <span class="person">/ person</span></span
-        >
-        <input type="text" />
-        <span class="total">Total <span class="person">/ person</span></span>
-        <input type="text" />
-        <button>Reset</button>
+        <div class="card-tip-amount">
+          <span class="tip-amount"
+            >Tip Amount <span class="person">/ person</span></span
+          ><span class="dolar">$<span class="result">4.27</spa></span>
+        </div>
+        <div class="card-total">
+          <span class="total"
+            >Total <span class="person">/ person</span></span
+          ><span class="dolar">$<spa>32.79</spa></span>
+        </div>
+
+        <button class="reset">Reset</button>
       </div>
     </div>
   </body>
