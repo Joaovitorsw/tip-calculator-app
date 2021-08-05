@@ -23,8 +23,9 @@ body {
 
 .splitter-card {
   padding: 20px;
+  padding-bottom: 220px;
   display: grid;
-  grid-template-rows: 20% 50% 60px 150px;
+  grid-template-rows: 25% 50% 25% 45%;
   border-radius: 15px;
   background-color: white;
   font-family: "Space Mono", monospace;
@@ -40,7 +41,7 @@ body {
   font-weight: 700;
   font-size: 14px;
 }
-.bill-input {
+.input-bill {
   text-align: right;
   font-family: "Space Mono", monospace;
   color: var(--primary-color);
@@ -99,7 +100,7 @@ body {
   border: none;
   border-radius: 5px;
 }
-.custom-input {
+.input-custom {
   max-width: 100px;
   font-size: 20px;
   font-family: "Space Mono", monospace;
@@ -110,11 +111,40 @@ body {
   background-color: transparent;
   outline: none;
 }
-.custom-input::placeholder {
+.input-custom::placeholder {
   color: var(--primary-color-light);
   opacity: 1;
   transition: opacity 1s;
 }
-.custom-input:focus::placeholder {
+.input-custom:focus::placeholder {
   opacity: 0;
 }
+.card-people {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-color);
+}
+.title-people {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.input-people {
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--secondary-color-light);
+  background-image: url(images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position-y: 50%;
+  background-position-x: 5%;
+}
+
