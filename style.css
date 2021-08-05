@@ -87,7 +87,10 @@ body {
   color: white;
   text-align: center;
 }
-
+.number-tip:hover {
+  transition: all 1s;
+  background-color: #26c2ad;
+}
 .custom-tip {
   max-height: 36px;
   margin: 5px;
@@ -106,4 +109,12 @@ body {
   border: none;
   background-color: transparent;
   outline: none;
+}
+.custom-input::placeholder {
+  color: var(--primary-color-light);
+  opacity: 1;
+  transition: opacity 1s;
+}
+.custom-input:focus::placeholder {
+  opacity: 0;
 }
