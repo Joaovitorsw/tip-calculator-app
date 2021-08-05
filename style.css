@@ -5,3 +5,25 @@
   --secondary-color-light: hsl(189, 41%, 97%);
   --third-color: hsl(184, 14%, 56%);
 }
+body {
+  background-color: var(--secondary-color);
+  padding: 40px;
+}
+.title {
+  color: var(--primary-color);
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.splitter-card {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 150px 150px 60px 150px;
+  border-radius: 15px;
+  background-color:white;
+}
