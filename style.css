@@ -8,7 +8,6 @@
 
 body {
   background-color: var(--secondary-color);
-  padding: 40px;
 }
 .title {
   color: var(--primary-color);
@@ -18,21 +17,22 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .splitter-card {
   padding: 20px;
   display: grid;
-  grid-template-rows: 20% 150px 60px 150px;
+  grid-template-rows: 20% 50% 60px 150px;
   border-radius: 15px;
-  background-color:white;
+  background-color: white;
+  font-family: "Space Mono", monospace;
 }
 
 .card-bill {
   display: flex;
   flex-direction: column;
-  font-family: "Space Mono", monospace;
   color: var(--primary-color);
 }
 .title-bill {
@@ -46,7 +46,8 @@ body {
   color: var(--primary-color);
   font-weight: 700;
   font-size: 20px;
-  padding: 3px;
+  margin-right: 5px;
+  padding: 5px;
   border-radius: 5px;
   outline: none;
   border: none;
@@ -56,4 +57,14 @@ body {
   background-size: 9px;
   background-position-y: 50%;
   background-position-x: 5%;
+}
+.card-tip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title-tip title-tip"
+    "5 10"
+    "15 25"
+    "50 custom"
+    ". .";
 }
