@@ -5,6 +5,7 @@
   --secondary-color-light: hsl(189, 41%, 97%);
   --third-color: hsl(184, 14%, 56%);
 }
+
 body {
   background-color: var(--secondary-color);
   padding: 40px;
@@ -23,7 +24,36 @@ body {
 .splitter-card {
   padding: 20px;
   display: grid;
-  grid-template-rows: 150px 150px 60px 150px;
+  grid-template-rows: 20% 150px 60px 150px;
   border-radius: 15px;
   background-color:white;
+}
+
+.card-bill {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
+  color: var(--primary-color);
+}
+.title-bill {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.bill-input {
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--secondary-color-light);
+  background-image: url(images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-size: 9px;
+  background-position-y: 50%;
+  background-position-x: 5%;
 }
