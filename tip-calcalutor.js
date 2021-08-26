@@ -31,6 +31,14 @@ $customInput.addEventListener("blur", () => {
   setSelected($customInput);
 });
 
+$numbersButtons.forEach(($number) => {
+  const numberValue = parseFloat($number.dataset.percentage);
+  $number.addEventListener("click", () => {
+    setSelected($number);
+    calculate(numberValue);
+  });
+});
+
 function calculate(tipValue) {
   if (isInvalid($billInput) || isInvalid($peopleInput) || tipValue === 0)
     return setButtonsDisabledState(true);
