@@ -55,7 +55,7 @@ Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visuali
 
 <div align="center">
 
-Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT) <img height="20px" src="images/favicon-32x32.png">
+Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) <img height="20px" src="images/favicon-32x32.png">
 
 ---
 
