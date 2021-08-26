@@ -241,3 +241,9 @@ input[type="number"] {
   outline: none;
   transition: background-color 0.5s;
 }
+.reset:hover {
+  background-color: #1ea190;
+}
+.reset:disabled {
+  background-color: #1fb8a367;
+}
