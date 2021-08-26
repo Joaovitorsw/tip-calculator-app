@@ -24,39 +24,36 @@
     <div class="splitter-card">
       <div class="card-bill">
         <h1 class="title-bill">Bill</h1>
-        <input type="number" placeholder="0" class="input-bill" />
+        <input type="number" data-form placeholder="0" class="input-bill" />
       </div>
       <div class="card-tip">
         <h1 class="title-tip">Select Tip %</h1>
-        <button class="number-tip">5%</button>
-        <button class="number-tip">10%</button>
-        <button class="number-tip">15%</button>
-        <button class="number-tip">25%</button>
-        <button class="number-tip">50%</button>
-        <button class="custom-tip">
-          <input type="text" placeholder="Custom" class="input-custom" />
-        </button>
+        <button class="number-tip" data-percentage="0.05" disabled>5%</button>
+        <button class="number-tip" data-percentage="0.10" disabled>10%</button>
+        <button class="number-tip" data-percentage="0.15" disabled>15%</button>
+        <button class="number-tip" data-percentage="0.25" disabled>25%</button>
+        <button class="number-tip" data-percentage="0.50" disabled>50%</button>
+        <input type="text" placeholder="Custom" class="input-custom" disabled />
       </div>
 
       <div class="card-people">
         <h1 class="title-people">Number of People</h1>
-        <input type="number" placeholder="0" class="input-people" />
+        <input type="number" data-form placeholder="0" class="input-people" />
       </div>
 
       <div class="card-result">
         <div class="card-tip-amount">
           <span class="tip-amount"
             >Tip Amount <span class="person">/ person</span></span
-          ><span class="dolar">$<span class="result">4.27</spa></span>
+          ><span class="dolar">$<span class="result-amount">0.00</span></span>
         </div>
         <div class="card-total">
-          <span class="total"
-            >Total <span class="person">/ person</span></span
-          ><span class="dolar">$<spa>32.79</spa></span>
+          <span class="total">Total <span class="person">/ person</span></span
+          ><span class="dolar">$<span class="result-total">0.00</span></span>
         </div>
-
-        <button class="reset">Reset</button>
+        <button class="reset" disabled>Reset</button>
       </div>
     </div>
+    <script src="tip-calcalutor.js"></script>
   </body>
 </html>
