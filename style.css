@@ -23,9 +23,9 @@ body {
 
 .splitter-card {
   padding: 20px;
-  padding-bottom: 220px;
   display: grid;
-  grid-template-rows: 25% 50% 25% 45%;
+  grid-template-rows: min-content min-content min-content min-content;
+  gap: 25px;
   border-radius: 15px;
   background-color: white;
   font-family: "Space Mono", monospace;
@@ -51,35 +51,43 @@ body {
   padding: 5px;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: 2px transparent solid;
   background-color: var(--secondary-color-light);
   background-image: url(images/icon-dollar.svg);
   background-repeat: no-repeat;
   background-size: 9px;
   background-position-y: 50%;
   background-position-x: 5%;
+  transition: border 0.5s;
+}
+.input-bill:focus,
+.input-custom:focus,
+.input-people:focus {
+  border: 2px #26c2ad solid;
+  box-shadow: none;
+}
+.input-bill.invalid,
+.input-custom.invalid,
+.input-people.invalid {
+  border: 2px #b47c6d solid;
 }
 .card-tip {
   display: grid;
+  grid-auto-flow: row;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "title-tip title-tip"
-    "5 10"
-    "15 25"
-    "50 custom"
-    ". .";
+  grid-template-rows: min-content min-content min-content min-content;
+  gap: 10px;
 }
 .title-tip {
   margin-bottom: 10px;
   color: var(--primary-color);
   font-weight: 700;
   font-size: 14px;
-  grid-area: title-tip;
+  grid-column: 1/-1;
 }
 .number-tip {
-  margin: 5px;
-  font-weight: 500;
-  max-height: 36px;
+  height: 100%;
+  max-height: 29px;
   font-family: "Space Mono", monospace;
   font-size: 20px;
   background-color: var(--primary-color);
@@ -87,29 +95,48 @@ body {
   border-radius: 5px;
   color: white;
   text-align: center;
+  outline: none;
+  transition: background-color 1s;
 }
 .number-tip:hover {
-  transition: all 1s;
   background-color: #26c2ad;
 }
-.custom-tip {
-  max-height: 36px;
-  margin: 5px;
-  font-family: "Space Mono", monospace;
-  background-color: var(--secondary-color-light);
-  border: none;
-  border-radius: 5px;
+.number-tip:disabled {
+  background-color: hsl(183, 96%, 9%);
 }
+.number-tip[selected] {
+  background-color: #26c2ad;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .input-custom {
-  max-width: 100px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  max-height: 29px;
   font-size: 20px;
   font-family: "Space Mono", monospace;
   font-weight: 700;
+  outline: none;
+  border: 2px solid transparent;
+  box-shadow: 1px 1px 1px 2.5px rgba(0, 0, 0, 0.109);
   color: var(--primary-color);
   text-align: center;
-  border: none;
-  background-color: transparent;
-  outline: none;
+  transition: border 0.5s;
+  background-color: var(--secondary-color-light);
+}
+.input-custom:hover {
+  background-color: rgba(187, 187, 187, 0.322);
 }
 .input-custom::placeholder {
   color: var(--primary-color-light);
@@ -118,6 +145,13 @@ body {
 }
 .input-custom:focus::placeholder {
   opacity: 0;
+}
+.input-custom:disabled {
+  background-color: rgba(112, 112, 112, 0.479);
+  box-shadow: none;
+}
+.input-custom[selected] {
+  border: 2px solid #26c2ad;
 }
 .card-people {
   display: flex;
@@ -139,13 +173,14 @@ body {
   padding: 5px;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   background-color: var(--secondary-color-light);
   background-image: url(images/icon-person.svg);
   background-repeat: no-repeat;
   background-size: 12px;
   background-position-y: 50%;
   background-position-x: 5%;
+  transition: border 0.5s;
 }
 
 .card-result {
@@ -193,7 +228,7 @@ body {
 .result {
   color: #26c2ad;
 }
-.reset { 
+.reset {
   background-color: #26c2ad;
   border: none;
   border-radius: 5px;
@@ -203,4 +238,6 @@ body {
   font-size: 15px;
   color: var(--primary-color);
   font-weight: 700;
+  outline: none;
+  transition: background-color 0.5s;
 }
