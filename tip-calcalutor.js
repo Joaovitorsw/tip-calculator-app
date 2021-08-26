@@ -85,3 +85,18 @@ function isInvalid($element) {
 function replaceNonNumbers($element) {
   return $element.value.replace(/\D/g, "");
 }
+
+function displayUpdate(amount, total) {
+  $resultAmount.innerHTML = amount.toFixed(2);
+  $resultTotal.innerHTML = total.toFixed(2);
+}
+
+function displayReset() {
+  $billInput.value = "";
+  $peopleInput.value = "";
+  $customInput.value = "";
+  $resultAmount.innerHTML = "0.00";
+  $resultTotal.innerHTML = "0.00";
+  setButtonsDisabledState(true);
+  setSelected($customInput);
+}
