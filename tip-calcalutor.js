@@ -22,3 +22,11 @@ $customInput.addEventListener("input", () => {
   $customInput.value = `${value}%`;
   focusNumber();
 });
+
+$customInput.addEventListener("blur", () => {
+  const value = replaceNonNumbers($customInput);
+  const percentage = value / 100;
+  $customInput.dataset.percentage = percentage;
+  calculate(percentage);
+  setSelected($customInput);
+});
