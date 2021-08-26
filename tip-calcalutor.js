@@ -81,3 +81,7 @@ function setButtonsDisabledState(state) {
 function isInvalid($element) {
   return $element.value === "" || $element.value === 0;
 }
+
+function replaceNonNumbers($element) {
+  return $element.value.replace(/\D/g, "");
+}
