@@ -114,7 +114,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -246,4 +245,45 @@ input[type="number"] {
 }
 .reset:disabled {
   background-color: #1fb8a367;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .splitter-card {
+    max-width: 800px;
+    max-height: 630px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-bill,
+  .card-people,
+  .card-tip {
+    grid-column: 1;
+  }
+
+  .card-result {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1/4;
+    justify-content: space-between;
+  }
+
+  .dolar,
+  .result-amount {
+    font-size: 35px;
+  }
+  .tip-amount,
+  .total {
+    font-size: 15px;
+  }
+  .reset {
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
+  }
 }
