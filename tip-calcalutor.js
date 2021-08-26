@@ -39,6 +39,19 @@ $numbersButtons.forEach(($number) => {
   });
 });
 
+$inputs.forEach(($input) => {
+  $input.addEventListener("input", () => {
+    const isInvalid = [...$inputs].some(($input) => {
+      const value = $input.value.trim();
+      return value === "" || value === "0";
+    });
+    if (isInvalid) return setButtonsDisabledState(true);
+    !isInvalid && setButtonsDisabledState(false);
+    const $selected = document.querySelector("[selected]");
+    if ($selected) calculate($selected.dataset.percentage);
+  });
+});
+
 function calculate(tipValue) {
   if (isInvalid($billInput) || isInvalid($peopleInput) || tipValue === 0)
     return setButtonsDisabledState(true);
