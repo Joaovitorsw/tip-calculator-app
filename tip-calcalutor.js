@@ -57,3 +57,14 @@ function setSelected($element) {
   });
   $element.setAttribute("selected", "");
 }
+
+function setButtonsDisabledState(state) {
+  $numbersButtons.forEach(($numbers) => {
+    $numbers.disabled = state;
+    $customInput.disabled = state;
+  });
+}
+
+function isInvalid($element) {
+  return $element.value === "" || $element.value === 0;
+}
