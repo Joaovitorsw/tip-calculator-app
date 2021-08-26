@@ -30,3 +30,22 @@ $customInput.addEventListener("blur", () => {
   calculate(percentage);
   setSelected($customInput);
 });
+
+function calculate(tipValue) {
+  if (isInvalid($billInput) || isInvalid($peopleInput) || tipValue === 0)
+    return setButtonsDisabledState(true);
+  const billValue = $billInput.value;
+  const division = billValue / $peopleInput.value;
+  const interestRate = division * tipValue;
+  const result = division + interestRate;
+  displayUpdate(interestRate, result);
+  $buttonReset.disabled = false;
+}
+
+function setSelected($element) {
+  $customInput.removeAttribute("selected");
+  $numbersButtons.forEach(($number) => {
+    $number.removeAttribute("selected");
+  });
+  $element.setAttribute("selected", "");
+}
