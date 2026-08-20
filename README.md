@@ -5,12 +5,10 @@
 </div>
 
 <div align="right">
-[![Portuguese](https://cdn-icons-png.flaticon.com/32/3022/3022546.png)](README.md)
+  
+  [![Portuguese](https://cdn-icons-png.flaticon.com/32/3022/3022546.png)](README.md)
+  
 </div>
-
-<p align="center">
-  <img alt="front-end-mentor-newbie" src=".github/front-end-mentor-junior.png" width="350px" height="180px"/>
-</p>
 
 <p align="center"> 
   <img alt="Top Language" src="https://img.shields.io/github/languages/top/Joaovitorsw/tip-calculator-app?color=3498db&style=for-the-badge">
@@ -18,11 +16,11 @@
   <a href="https://github.com/Joaovitorsw">
     <img alt="Developed by João Vitor" src="https://img.shields.io/badge/Developer-João_Vitor-%3498db?color=3498db&style=for-the-badge&label=Desenvolvedor">
   </a>  
-  <img alt="Project License" src="https://img.shields.io/apm/l/vim-mode?style=for-the-badge&label=licen%C3%A7a"/>   
-   <img alt="Project Status" src="https://camo.githubusercontent.com/e1242aef6552b4e9b2d6764e66eb55f29758cb1e6d332b74efa89b3144339b25/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e636c75c3ad646f2d253334393864623f636f6c6f723d677265656e267374796c653d666f722d7468652d6261646765266c6162656c3d537461747573">  
-  
-  
+  <img alt="Project License" src="https://img.shields.io/github/license/Joaovitorsw/tip-calculator-app?style=for-the-badge&label=licen%C3%A7a"/>   
+  <img alt="Project Status" src="https://img.shields.io/badge/status-concluido-green?style=for-the-badge&label=Status">
 </p>
+
+<h1 align="center">Tip Calculator App</h1>
 
 <p align="center">
  <a href="#eye_speech_bubble-visualizar">Visualizar</a> •
@@ -30,6 +28,8 @@
  <a href="#hammer_and_wrench-tecnologias">Tecnologias</a> • 
  <a href="#brain-conceitos-aplicados">Conceitos</a> •
  <a href="#sparkles-funcionalidades">Funcionalidades</a> •
+ <a href="#rocket-como-executar">Como executar</a> •
+ <a href="#label-palavras-chave">Palavras-chave</a> •
  <a href="#boy-autor">Autor</a> •
  <a href="#balance_scale-licença">Licença</a>
 </p>
@@ -40,20 +40,21 @@
 
 <div align="center">
 
-Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visualizar: [Clique Aqui](https://joaovitorsw-tip-calculator-app.netlify.app/)
+Deploy/preview do projeto disponível em: [Clique Aqui](https://joaovitorsw-tip-calculator-app.netlify.app/)
 
-|                             :computer:Desktop                             |                             :iphone: Mobile                              |
+|                             :computer: Desktop                             |                             :iphone: Mobile                              |
 | :-----------------------------------------------------------------------: | :----------------------------------------------------------------------: |
-| <kbd><img src=".github/previews/desktop-preview.jpg" alt="Tablet"/></kbd> | <kbd><img src=".github/previews/mobile-preview.jpg" alt="Mobile"/></kbd> |
+| <kbd><img src=".github/previews/desktop-preview.jpg" alt="Desktop"/></kbd> | <kbd><img src=".github/previews/mobile-preview.jpg" alt="Mobile"/></kbd> |
 
 </div>
   
 ---
+
 ## :information_source: _Sobre_
 
 <div align="center">
 
-Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) <img height="20px" src="images/favicon-32x32.png">
+Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX), desenvolvida para praticar HTML, CSS, responsividade e boas práticas de layout.
 
 ---
 
@@ -63,10 +64,10 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 
 <div align="center">
 
-| :globe_with_meridians: FrontEnd |
-| :-----------------------------: |
-| [HTML 5](https://www.w3schools.com/html/) |
+| :globe_with_meridians: Stack |
+| :--------------------------: |
 | [CSS3](https://www.w3schools.com/css/) |
+| [HTML 5](https://www.w3schools.com/html/) |
 | [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
 
 </div>
@@ -79,22 +80,13 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 
 |  :page_facing_up:  |
 | :----------------: |
-|    Mobile First    |
-|      Position      |
-|     HTML Class     |
-|     CSS Class      |
-|    Media Query     |
-|  Pseudo Selectors  |
-|   CSS Box Model    |
-|  Size Properties   |
-| Element visibility |
-|    Atomic Comit    |
-|      Flexbox       |
-|     ClassList      |
-|      Data Set      |
-|   Array Methods    |
-|   EventListiner    |
-| Callback Function  |
+| Mobile First |
+| Responsividade |
+| HTML Semantico |
+| CSS Box Model |
+| Flexbox |
+| Grid |
+| Media Query |
 
 </div>
 
@@ -104,12 +96,37 @@ Minha versão da aplicação proposta pelo [Frontend Mentor](https://www.fronten
 
 <div align="center">
 
+|                     :page_facing_up:                      |
+| :-------------------------------------------------------: |
+| Calcular valores a partir de entradas do usuario |
 
-|                             :page_facing_up:                              |
-| :-----------------------------------------------------------------------: |
-| Verificar se todos os campos estão preenchidos antes de liberar os botões |
-|       Calcular os juros a partir dos valores passados pelo usuário        |
-|                     Atualizar o display em tempo Real                     |
+</div>
+
+---
+
+## :rocket: _Como Executar_
+
+```bash
+Abra o arquivo index.html no navegador
+```
+
+---
+
+## :label: _Palavras-chave_
+
+<div align="center">
+
+| :mag_right: Tags |
+| :---------------: |
+| `portfolio` |
+| `joaovitorsw` |
+| `frontend-mentor` |
+| `frontend` |
+| `responsive-design` |
+| `html` |
+| `css` |
+| `calculator` |
+| `javascript` |
 
 </div>
 
@@ -139,7 +156,7 @@ Desenvolvido com ❤️ por João Vitor Pereira dos Santos 👋🏽 Meus Contato
 
 <div align="center">
 
-Copyright ©️ 2021 [João Vitor Pereira dos Santos ](https://github.com/Joaovitorsw).<br />
-This project is licensed by [MIT](./LICENSE).
+Copyright ©️ 2026 [João Vitor Pereira dos Santos](https://github.com/Joaovitorsw).<br />
+Este projeto ainda não possui uma licença formal publicada.
 
 </div>
